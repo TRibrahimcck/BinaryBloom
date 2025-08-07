@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BinaryBloom - Ürünler</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    
+    <!-- Sol görsel -->
+    <div class="sidebar">
+      <img src="foto/anasayfa.png" alt="Ürünler Görseli" />
+    </div>
+
+    <!-- Ana içerik -->
+    <div class="main">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">BinaryBloom</div>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="menu">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="urunler.html" class="active">Ürünler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- İçerik -->
+      <section class="content">
+        <h1>Ürünlerimiz</h1>
+        <div class="products">
+          <div class="product-card">
+            <img src="foto/urun1.jpg" alt="Ürün 1" />
+            <h3>Ürün 1</h3>
+            <p>Kullanımı kolay ve etkili eğitim yazılımı.</p>
+          </div>
+          <div class="product-card">
+            <img src="foto/urun2.jpg" alt="Ürün 2" />
+            <h3>Ürün 2</h3>
+            <p>Modern web tabanlı proje yönetim aracı.</p>
+          </div>
+          <div class="product-card">
+            <img src="foto/urun3.jpg" alt="Ürün 3" />
+            <h3>Ürün 3</h3>
+            <p>Öğrenci takip ve değerlendirme sistemi.</p>
+          </div>
+          <!-- İstersen daha fazla ürün ekleyebilirsin -->
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js">    const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});</script>
+</body>
+</html>

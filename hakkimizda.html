@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BinaryBloom - Hakkımızda</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    
+    <!-- Sol görsel -->
+    <div class="sidebar">
+      <img src="foto/anasayfa.png" alt="Hakkımızda Görseli" />
+    </div>
+
+    <!-- Ana içerik -->
+    <div class="main">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">BinaryBloom</div>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="menu">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html" class="active">Hakkımızda</a></li>
+          <li><a href="hizmetler.html">Hizmetler</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- İçerik -->
+      <section class="content">
+        <h1>Hakkımda</h1>
+        <p>
+          Merhaba, ben <strong>İbrahim Çiçek</strong>. Yazılım ve teknolojiye olan ilgim sayesinde kendimi bu alanda sürekli geliştirdim ve
+          <strong>BinaryBloom</strong> çatısı altında projeler üretmeye başladım.
+        </p>
+
+        <p>
+          Özellikle <strong>eğitim yazılımları</strong> ve <strong>bilgisayar teknolojileri</strong> üzerine çalışmalar yapıyor, kullanıcı dostu arayüzler ve akıllı çözümler geliştiriyorum.
+        </p>
+
+        <p>
+          Amacım; sade, işlevsel ve modern sistemler tasarlayarak eğitimde dijitalleşmeye katkı sunmak ve yazılım alanında değer üretmektir.
+          HTML, CSS, JavaScript, PHP ve Java gibi teknolojileri kullanarak projeler geliştiriyorum.
+        </p>
+
+        <p>
+          Teknolojiye olan tutkum ve sürekli öğrenme isteğim sayesinde, kullanıcıların ihtiyaçlarına özel, kaliteli ve güvenilir çözümler sunuyorum.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js">
+        const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+  </script>
+</body>
+</html>
